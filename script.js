@@ -22,3 +22,13 @@ numbers.sort(function(a, b) {
 
 // print the new sorted array
 console.log("Here is the sorted array in ascending order with the new addition of 19, 23, and 30: ", numbers);
+
+// Question 1.4 Remove two numbers 8, 31 from array
+// pop can remove last element, shift can remove first element, splice can remove via 
+// the index of the number, and filter can remove the specified numbers directly
+
+// remove the numbers 8 and 31 frm the array using filter
+numbers = numbers.filter(num => num !== 8 && num !== 31);
+
+// print the updated array
+console.log("Updated array after removing 8 and 31", numbers);
